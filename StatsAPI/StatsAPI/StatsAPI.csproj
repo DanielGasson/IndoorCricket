@@ -96,6 +96,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="DataAccess\ConnectionProperties.cs" />
+    <Compile Include="DataAccess\IConnectionProperties.cs" />
     <Compile Include="Controllers\PingController.cs" />
   </ItemGroup>
   <ItemGroup>
