@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace StatsAPI
+namespace StatsAPI.Controllers
 {
 	public class PingController : ApiController
 	{

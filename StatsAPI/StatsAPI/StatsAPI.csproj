@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -95,7 +95,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\PlayersController.cs" />
+    <Compile Include="Models\Player.cs" />
     <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="DataAccess\IRepository.cs" />
+    <Compile Include="DataAccess\DapperRepository.cs" />
     <Compile Include="DataAccess\ConnectionProperties.cs" />
     <Compile Include="DataAccess\IConnectionProperties.cs" />
     <Compile Include="Controllers\PingController.cs" />

@@ -1,4 +1,4 @@
-﻿namespace StatsAPI
+﻿namespace StatsAPI.DataAccess
 {
 	public interface IConnectionProperties
 	{

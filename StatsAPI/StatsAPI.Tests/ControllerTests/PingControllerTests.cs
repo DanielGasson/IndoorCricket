@@ -1,7 +1,8 @@
 ﻿using System.Web.Http.Results;
 using NUnit.Framework;
+using StatsAPI.Controllers;
 
-namespace StatsAPI.Tests
+namespace StatsAPI.Tests.ControllerTests
 {
 	[TestFixture]
 	public class PingControllerTests
@@ -13,7 +14,7 @@ namespace StatsAPI.Tests
 
 			var result = sut.Ping();
 
-			Assert.IsNotNull(result as OkResult);
+		    Assert.That(result as OkResult, Is.Not.Null);
 		}
 	}
 }

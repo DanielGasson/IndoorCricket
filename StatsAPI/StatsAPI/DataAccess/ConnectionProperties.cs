@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace StatsAPI
+namespace StatsAPI.DataAccess
 {
 	public class ConnectionProperties : IConnectionProperties
 	{
