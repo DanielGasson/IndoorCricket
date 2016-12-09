@@ -2,30 +2,30 @@
 using Dapper;
 using MySql.Data.MySqlClient;
 
-namespace StatsAPI.DataAccess
+namespace StatsAPI.DataAccess.Adaptors
 {
-	public class DapperRepository : IRepository
+	public class MySqlAdaptor : IDataAccessAdaptor
 	{
 		private readonly IConnectionProperties _connectionProperties;
 
-		public DapperRepository(IConnectionProperties connectionProperties)
+		public MySqlAdaptor(IConnectionProperties connectionProperties)
 		{
 			_connectionProperties = connectionProperties;
 		}
 
-		public IEnumerable<T> Query<T>(string sql)
+		public IEnumerable<T> Query<T>(string query)
 		{
 			using (var connection = new MySqlConnection(_connectionProperties.ConnectionString))
 			{
-				return connection.Query<T>(sql);
+				return connection.Query<T>(query);
 			}
 		}
 
-		public T QuerySingle<T>(string sql)
+		public T QuerySingle<T>(string query)
 		{
 			using (var connection = new MySqlConnection(_connectionProperties.ConnectionString))
 			{
-				return connection.QueryFirst<T>(sql);
+				return connection.QueryFirst<T>(query);
 			}
 		}
 	}

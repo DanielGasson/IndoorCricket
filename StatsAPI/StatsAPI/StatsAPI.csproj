@@ -92,20 +92,21 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\Adaptors\MySqlAdaptor.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Controllers\PlayersController.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="App_Start\Startup.cs" />
-    <Compile Include="DataAccess\IRepository.cs" />
-    <Compile Include="DataAccess\DapperRepository.cs" />
+    <Compile Include="DataAccess\IDataAccessAdaptor.cs" />
     <Compile Include="DataAccess\ConnectionProperties.cs" />
     <Compile Include="DataAccess\IConnectionProperties.cs" />
     <Compile Include="Controllers\PingController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="DataAccess" />
     <Folder Include="Models\" />
     <Folder Include="DataAccess\" />
   </ItemGroup>
