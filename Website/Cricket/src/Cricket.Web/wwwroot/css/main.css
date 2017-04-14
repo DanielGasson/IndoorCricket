@@ -1,0 +1,59 @@
+﻿/* reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ background: transparent;
+}
+/* end reset */
+
+.cntrImage {
+    text-align: center;
+    /*display: block;*/
+}
+
+.horizCntr {
+    
+}
+
+img {
+    vertical-align: middle;
+}
+
+.vertCntr {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+body {
+   /*background: #fefef5;*/
+   /*background: -webkit-linear-gradient(left, #555A9E, #82CAFA);*/
+   background: -webkit-linear-gradient(left, #1c7707, #a3d698);
+   /*background: -moz-linear-gradient(bottom right, #555A9E, #82CAFA);
+   background: -ms-linear-gradient(bottom right, #555A9E, #82CAFA);
+   background: -o-linear-gradient(bottom right, #555A9E, #82CAFA);
+   background: linear-gradient(bottom right, #555A9E, #82CAFA);*/
+   /*background: #555A9E;  82CAFA*/
+}
+
+h1 {
+   font-family: 'Proxima Nova Alt';
+   font-style: normal;
+   font-weight: normal;
+   color: black;
+}
